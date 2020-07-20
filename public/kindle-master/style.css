@@ -1,0 +1,874 @@
+
+/*
+Template Name: Kindle	
+Author: MarkUps
+Author URI: http://www.markups.io/
+Version: 1.0
+*/
+
+
+/* Table of Content
+==================================================
+#BASIC TYPOGRAPHY
+#HEADER	
+#MENU 
+#HERO SECTION
+#COUNTER
+#BOOK OVERVIEW
+#VIDEO REVIEW
+#AUTHOR
+#PRICING
+#READERS TESTIMONIALS
+#CONTACT US
+#FOOTER
+#RESPONSIVE STYLE
+*/
+
+
+/*--------------------*/
+/* BASIC TYPOGRAPHY */
+/*--------------------*/
+
+body,
+html {
+	overflow-x:hidden;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	line-height: 1.5;
+	color: #1c1b1b;
+}
+
+
+
+a:hover,
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	margin-top: 0;
+}
+
+
+h1 {
+	font-size: 38px;
+}
+
+h2 {  
+	font-size: 32px; 
+	line-height: 1.13; 
+}
+
+h3 {  
+	font-size: 26px;  
+}
+
+h4 {  
+	font-size: 22px;  
+}
+
+h5 {  
+	font-size: 20px;  
+}
+
+h6 {  
+	font-size: 18px;  
+}
+
+img {
+	border: none;
+	max-width: 100%;
+}
+
+strong {
+	font-weight: 500;
+}
+
+code {
+	background-color: #ee6e73;
+	border-radius: 2px;
+	color: #fff;
+	padding: 2px 4px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+pre code {
+	background-color: transparent;
+	color: #333;
+}
+
+del{
+	text-decoration-color: #ee6e73;
+}
+
+
+
+address {
+	line-height: 1.5;
+	padding-left: 10px;
+}
+
+dl dt {
+	font-weight: 700;
+}
+
+dl dd {
+	margin-left: 0;
+}
+
+blockquote {
+	background-color: #f8f8f8;
+	border-radius: 0 4px 4px 0;
+	padding: 5px 15px;
+	
+}
+
+blockquote p {
+	margin-top: 10px;
+}
+
+button {
+	padding: 5px 15px;
+	border: none;
+}
+
+button:focus {
+	outline: none;
+	border: none;
+}
+
+/*Wordpress default class*/
+
+.alignleft {
+	float:left;
+	margin-right:8px;
+}
+
+.aligncenter {
+	display:block;
+	margin:10px auto;
+}
+
+.alignright {
+	float:right;
+	margin-left:8px;
+}		
+
+.alignnone {
+	max-width: 100%;
+}
+
+.wp-caption-text {
+	font-size: 12px;
+	font-style: italic;
+	text-align: center;
+}
+
+/* ========= BUTTON =========*/
+
+.mu-primary-btn {
+	background-color: transparent;
+	border-radius: 100px;
+	border: solid 1px #ffffff;
+	color: #fff;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	padding: 12px 25px;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.mu-primary-btn:hover,
+.mu-primary-btn:focus {
+	background-color: #fff;
+	color: #000;
+}
+
+.mu-send-msg-btn {
+	border-radius: 20px;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	text-align: center;
+	padding: 14px 24px;
+	margin-top: 10px;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	width: 150px;
+	color: #fff;
+}
+
+.mu-send-msg-btn:hover,
+.mu-send-msg-btn:focus {
+	background-color: #fff;
+}
+
+
+
+/*--------------------*/
+/* HEADER */
+/*--------------------*/
+
+#mu-header {
+	display: inline;
+	float: left;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 25px 0;
+	z-index: 999;
+	transition: all 0.5s;
+}
+
+
+
+
+
+/*--------------------*/
+/* MENU */
+/*--------------------*/
+
+
+
+/*--------------------*/
+/* HERO SECTION */
+/*--------------------*/
+
+#mu-hero {
+	display: inline;
+	float: left;
+	padding: 160px 0 90px;
+	width: 100%;
+}
+
+.mu-hero-left{
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-hero-right {
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-hero-left h1 {
+	color: #fff;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+.mu-hero-left p {
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.mu-hero-left .mu-primary-btn {
+	margin-top: 20px;
+	background-color: #fff;
+	font-weight: 600;
+}
+
+.mu-hero-left span {
+	display: block;
+	margin-top: 10px;
+	color: #f8f8f8;
+}
+
+
+/*--------------------*/
+/* COUNTER */
+/*--------------------*/
+
+#mu-counter {
+	background-color: #fff;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: inline;
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+.mu-counter-area {
+	display: inline;
+	float: left;
+	padding: 70px 0 50px;
+	width: 100%;
+}
+
+.mu-counter-area h2 {
+	color: #fff;
+	text-align: center;
+}
+
+.mu-counter-block {
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-single-counter {
+	display: inline;
+	float: left;
+	text-align: center;
+	width: 80%;
+	border: 1px solid #ddd;
+	padding-bottom: 20px;
+	margin: 0 10%;
+}
+
+.mu-single-counter i {
+	font-size: 40px;
+	padding: 15px 40px;
+	margin-bottom: 0px;
+	display: inline-block;
+	padding-bottom: 0;
+	margin-top: -60px;
+	background: #fff;
+}
+
+.counter-value {
+	font-size: 35px;
+	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.mu-counter-name {
+	color: #333;
+}
+
+
+/*--------------------*/
+/* BOOK OVERVIEW */
+/*--------------------*/
+
+
+#mu-book-overview {
+	background-color: #f8f8f8;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-book-overview-area {
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
+
+.mu-heading-area {
+	display: inline;
+	float: left;
+	text-align: center;
+	padding: 0 10%;
+	width: 100%;
+}
+
+.mu-heading-title {
+	color: #1c1b1b;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.mu-header-dot {
+	border-radius: 0;
+	height: 3px;
+	width: 100px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.mu-book-overview-content{
+	display: inline;
+	float: left;
+	margin-top: 70px;
+	width: 100%;
+}
+
+.mu-book-overview-single {
+	display: inline;
+	float: left;
+	text-align: center;
+	width: 100%;
+	background: #fff;
+	padding: 20px 10px;
+	margin: 10px 0 15px;
+}
+
+.mu-book-overview-icon-box {
+	font-size: 25px;
+	padding: 5px 12px;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+
+.mu-book-overview-single h4{
+	margin-bottom: 20px;
+}
+
+
+/*--------------------*/
+/* VIDEO REVIEW */
+/*--------------------*/
+
+
+#mu-video-review {
+	background-image: url(assets/images/video-review-bg.jpeg);
+	background-attachment: fixed;
+	background-size: cover;
+	display: inline;
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+#mu-video-review:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.84;
+}
+
+.mu-video-review-area {
+	display: inline;
+	float: left;
+	padding: 150px 0;
+	width: 100%;
+}
+
+.mu-video-review-area .mu-heading-title, 
+.mu-video-review-area .mu-heading-area p{
+	color: #fff;
+}
+
+.mu-video-review-area .mu-header-dot {
+	background-color: #f8f8f8;
+}
+
+.mu-video-review-content {
+	display: inline;
+	float: left;
+	margin-top: 70px;
+	width: 100%;
+	padding: 0 10%;
+}
+
+.mu-video-iframe {
+	height: 550px;
+}
+
+/*--------------------*/
+/* AUTHOR */
+/*--------------------*/
+
+
+#mu-author {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-author-area {
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
+
+.mu-author-content{
+	display: inline;
+	float: left;
+	margin-top: 50px;
+	width: 100%;
+}
+
+.mu-author-image {
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-author-info {
+	display: inline;
+	float: left;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.mu-author-info h3 {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.mu-author-info p {
+	margin-bottom: 20px;
+}
+
+.mu-author-social {
+	display: inline;
+	float: left;
+	margin-top: 25px;
+	width: 100%;
+}
+
+.mu-author-social a {
+	display: inline-block;
+	font-size: 16px;
+	padding: 5px;
+	margin-right: 10px;
+	color: #fff;
+	width: 35px;
+	text-align: center;
+}
+
+
+
+
+/*--------------------*/
+/* PRICING */
+/*--------------------*/
+
+
+#mu-pricing {
+	background-color: #f8f8f8;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-pricing-area {
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
+
+.mu-pricing-content{
+	display: inline;
+	float: left;
+	margin-top: 70px;
+	width: 100%;
+}
+
+.mu-pricing-single {
+	background-color: #fff;
+	color: #555;
+	display: inline;
+	float: left;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 30px 0;
+}
+
+.mu-pricing-single-head {
+	border-bottom: 1px solid #eee;
+	display: inline-block;
+	float: left;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.mu-pricing-single-head h4 {
+	font-size: 18px;
+	margin-bottom: 0;
+}
+
+.mu-pricing-single-head .mu-price-tag {
+	font-size: 55px;
+	font-weight: 700;
+	margin-bottom: 0;
+	padding: 15px 0 20px;
+}
+
+.mu-pricing-single-head .mu-price-tag span {
+	font-size: 22px;
+	margin-right: -10px;
+}
+
+.mu-price-feature {
+	padding: 20px 0;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.mu-price-feature li {
+	list-style: none;
+	line-height: 2;
+	margin-bottom: 10px;
+}
+
+.mu-pricing-single-footer {
+	display: inline-block;
+	float: left;
+	width: 100%;
+}
+
+.mu-order-btn {
+	background-color: transparent;
+	border-radius: 100px;
+	border: 1px solid #555;
+	color: #555;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+	padding: 12px 25px;
+	font-weight: 500;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	text-transform: uppercase;
+}
+
+.mu-popular-price-tag {
+	color: #fff;
+}
+
+.mu-popular-price-tag .mu-order-btn {
+	background-color: #fff;
+	border: 1px solid #fff;
+}
+
+
+/*--------------------*/
+/* READERS TESTIMONIALS */
+/*--------------------*/
+
+#mu-testimonials {
+	background-image: url("assets/images/testimonials-bg.jpeg");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: inline;
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+#mu-testimonials::before {
+	background: rgba(0,0,0,0.9);
+	bottom: 0;
+	content: '';
+	left: 0;
+	top: 0;
+	right: 0;
+	position: absolute;
+	opacity: 0.84;
+}
+
+.mu-testimonials-area {
+	display: inline;
+	float: left;
+	padding: 150px 0 175px;
+	width: 100%;
+}
+
+.mu-testimonials-area h2 {
+	color: #fff;
+	text-align: center;
+}
+
+.mu-testimonials-block {
+	display: inline;
+	float: left;
+	margin-top: 60px;
+	width: 100%;
+}
+
+.mu-testimonial-slide li{
+	list-style: none;
+	text-align: center;
+}
+
+.mu-testimonial-slide li p {
+	color: #fff;
+	padding: 0 10%;
+}
+
+.mu-testimonial-slide .mu-rt-img {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin-top: 25px;
+	display: inline-block;
+}
+
+.mu-rt-name {
+	margin-bottom: 5px;
+	color: #fff;
+	line-height: 1;
+	margin-top: 25px;
+	letter-spacing: 1px;
+}
+
+.mu-rt-title {
+	color: #fff;
+	font-size: 14px;
+}
+
+.mu-testimonial-slide .slick-dots {
+    bottom: -50px;
+}
+
+.mu-testimonial-slide .slick-dots li button {
+	height: 15px;
+	padding: 0;
+	width: 15px;
+	border-radius: 50%;
+	border: 1px solid #f8f8f8;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.mu-testimonial-slide .slick-dots li button:hover,
+.mu-testimonial-slide .slick-dots li button:focus,
+.mu-testimonial-slide .slick-dots li.slick-active button {
+	opacity: 1;
+}
+
+.mu-testimonial-slide .slick-dots li button:before {
+	display: none;
+}
+
+/*--------------------*/
+/* CONTACT US */
+/*--------------------*/
+
+#mu-contact {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-contact-area {
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
+
+.mu-contact-header {
+	display: inline;
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+
+.mu-contact-content {
+	display: inline;
+	float: left;
+	margin-top: 50px;
+	width: 100%;
+	padding: 0 20%;
+}
+
+.mu-contact-form {
+	text-align: center;
+}
+
+
+/* GOOGLE MAP */
+
+#mu-google-map {
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+#mu-google-map iframe{
+    pointer-events: none;
+}
+
+
+/*--------------------*/
+/* FOOTER */
+/*--------------------*/
+
+
+#mu-footer{
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-footer-area{
+	display: inline;
+	float: left;
+	padding: 30px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.mu-footer-area a{
+	font-weight: 600;
+}
+
+.mu-social-media {
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-social-media a {
+	display: inline-block;
+	font-size: 15px;
+	width: 35px;
+	height: 35px;
+	line-height: 33px;
+	text-align: center;
+	margin: 0 5px;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	border-radius: 50%;
+}
+
+.mu-social-media a:hover,
+.mu-social-media a:focus {
+	background-color: #fff;
+}
+
+.mu-copyright {
+	margin-top: 10px;
+	display: inline-block;
+}
+
+
+/*--------------------*/
+/* RESPONSIVE STYLE */
+/*--------------------*/
+

@@ -1,0 +1,53 @@
+{
+  "name": "melihovv/laravel-shopping-cart",
+  "description": "Shopping cart package for laravel",
+  "license": "MIT",
+  "keywords": [
+    "cart",
+    "shopping cart",
+    "laravel"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "Alexander Melihov",
+      "email": "amelihovv@ya.ru"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Melihovv\\ShoppingCart\\": "src/ShoppingCart"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Melihovv\\ShoppingCart\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "illuminate/container": "^6.0",
+    "illuminate/database": "^6.0",
+    "illuminate/redis": "^6.0",
+    "illuminate/support": "^6.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^4.0",
+    "phpunit/phpunit": "^8.0",
+    "predis/predis": "^1.1"
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Melihovv\\ShoppingCart\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
